@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List - Rizan</title>
+    <title>Todo List - Yama</title>
 
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+  
+    <header>
+        <h1 >To do List</h1>
+    </header>
+
+    <main>
+     
+        <section>
+            <form>
+               
+                <input type="text" id="todo-input" placeholder="Enter a new activity">
+
+                <input type="date" id="todo-date" placeholder="Enter due date">
+            </form>
+           
+            <button onclick="addTodo()"
+                type="button">Add
+                To do</button>
+        </section>
+    
+        <section>
+            <button onclick="removeAllTodo()">Clear All To do</button>
+            <button>Filter To do</button>
+        </section>
+   
+        <section>
+            <header>
+                <h1>List of To do</h1>
+            </header>
+
+            <ul id="todo-list">
+                 <li>No activity</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Zan's To do List</p>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
